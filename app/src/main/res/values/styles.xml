@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo do aplicativo com ActionBar -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Defina outras propriedades do tema, se necessário -->
+    </style>
+
+    <!-- Estilo do aplicativo sem ActionBar -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Defina outras propriedades do tema, se necessário -->
+    </style>
+</resources>

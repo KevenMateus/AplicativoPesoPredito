@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#F2F2F2</color>
+    <color name="hint_text_color">#999999</color>
+    <color name="edit_text_background">#FFFFFF</color>
+    <color name="button_background">#FF4081</color>
+    <color name="light_blue">#42B6EA</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#D3D3D3</color>
+</resources>

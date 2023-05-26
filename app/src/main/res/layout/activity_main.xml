@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/title_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Peso Predito"
+        android:textSize="28sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_label"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="@color/edit_text_background"
+        android:hint="Digite sua altura em cm"
+        android:minHeight="48dp"
+        android:textColorHint="@color/hint_text_color" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/height_input"
+        android:layout_marginTop="20dp"
+        android:background="@color/button_background"
+        android:onClick="calculateWeight"
+        android:text="Calcular"
+        android:textColor="#020101" />
+
+    <TableLayout
+        android:id="@+id/results_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/calculate_button"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+        <!-- Títulos da tabela -->
+        <TableRow>
+            <TextView
+                android:text="Categoria"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/table_row_background" />
+
+            <TextView
+                android:text="Peso Ideal (kg)"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/table_row_background" />
+
+            <TextView
+                android:text="4 ml/kg"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/table_row_background" />
+
+            <TextView
+                android:text="5 ml/kg"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/table_row_background" />
+
+            <TextView
+                android:text="6 ml/kg"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/table_row_background" />
+        </TableRow>
+
+        <!-- Conteúdo da tabela -->
+
+    </TableLayout>
+
+</RelativeLayout>
